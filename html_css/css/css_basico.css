@@ -1,0 +1,24 @@
+/* ==========COMMON SELECTORS========== */
+
+/* html element */
+p{
+    color: blue;
+}
+/* by class */
+.myclass{
+    color:red;
+}
+/* by id */
+#myid{
+    color:yellow;
+}
+
+/* ==========PROPIEDADES DE TEXTO========== */
+p{
+    /*Modifies the TEXT color, use hex,or rgb, NOT: red*/
+    color: #ff0000;
+    /* El estilo del texto, tipografia (prueba de izq a der, por compatibilidad) */
+    font-family:'Courier New', Courier, monospace; /*Si el nombre tiene espacio se usa ''*/
+    /* El size del texto */
+    font-size: 13px;
+}
