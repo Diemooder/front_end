@@ -21,4 +21,31 @@ p{
     font-family:'Courier New', Courier, monospace; /*Si el nombre tiene espacio se usa ''*/
     /* El size del texto */
     font-size: 13px;
+    /* El grosor del texto (rango 100-900) (bold == 700) (bolder == siguiente nivel) */
+    font-weight: bold; /* Los valores numericos funcionan dependiendo del soporte del font-family (ex: sans-serif no tiene definido 300, pero si 700)*/ 
+    /* Estilo de las letras */
+    font-style: italic;
+    /* alinear el texto en base al box */
+    text-align: center; /* Justify: Estira todo para que todo este en principio y final */
+    /* decora el texto */
+    text-decoration: underline; /* overline o line-through, puedes combinar */
+    /* define la altura de cada linea */
+    line-height: 1; /* Multiplicador, 2 = 2x, 3 = 3x; tambien acepta % */
+    /* define el espaciado entre letras */
+    letter-spacing: 1px; 
+    /* cambia el texto (uppercase, lowercase, capitalize, none(default)) */
+    text-transform: capitalize;
+}
+
+
+/* CONFIGURAR FONTS PROPIOS */
+@font-face {
+    font-family: "MiruBingsu"; /*Nombre del font*/
+    /* RECOMENDABLE, colocar format() por compatibilidad .ttf = truetype */
+    src: url("CedarvilleCursive-Regular.ttf") format("truetype"); 
+    font-weight: 400; /* definir el peso del formato (IMPORTANTE) */
+    /* RECUERDA */
+    /* Los formatos no vienen junto con los distintos pesos como negrita, cada archivo es un peso diferente */
+    /* En este caso, solamente venia en un peso de 400, pero la mayoria tienen varios archivos */
+    /* Entonces son multiplos @font-face los que hay que definir para el funcionamiento deseado */
 }
