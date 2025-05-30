@@ -49,3 +49,26 @@ p{
     /* En este caso, solamente venia en un peso de 400, pero la mayoria tienen varios archivos */
     /* Entonces son multiplos @font-face los que hay que definir para el funcionamiento deseado */
 }
+
+
+/* BORDERS */
+div{
+	border-width: 3px;
+	border-color: #992011;
+	border-style: solid;
+	border: 3px #992011 black; /* width color style */
+	border-top: 4px #290390 black;
+	border-radius: 10px 50px 30px 40px; /* izqa dera izqab derab*/
+	border-bottom-style: dashed; 
+	border-radius: 50%;
+}
+
+
+/* BOX SIZING */
+div{
+	box-sizing: border-box; /* Forza a la caja a mantenerse en el size deseado, no importa el padding, margin or border que agreges, hace basicamente, que el size siempre sea el mismo ajusta el contenido para mantener la medida */
+}
+
+
+/* COLORES */
+
